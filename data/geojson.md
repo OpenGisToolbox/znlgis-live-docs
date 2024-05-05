@@ -5,6 +5,13 @@
 ### 1.1 实现思路
 
 ```mermaid
+
+graph TD
+    A[读取GeoJSON文件] --> B[读取GeoJSON文件内容]
+    B --> C[解析GeoJSON文件内容]
+    C --> D[构建SimpleFeatureCollection]
+    D --> E[返回SimpleFeatureCollection]
+
 ```
 
 ### 1.2 代码示例
@@ -41,6 +48,12 @@
 ### 2.1 实现思路
 
 ```mermaid
+
+graph TD
+    A[构建图层结构] --> B[写入要素]
+    B --> C[关闭图层]
+    C --> D[写入编码]
+
 ```
 
 ### 2.2 代码示例
