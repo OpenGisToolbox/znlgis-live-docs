@@ -39,9 +39,22 @@ graph TD
                 throw new RuntimeException("CPG文件保存的编码格式错误");
             }
         }
+        
+        if (shpCharset == null) {
+            String dbfPath = CharSequenceUtil.replaceLast(shpPath, ".shp", ".dbf",true);
+            if(FileUtil.exist(dbfPath)){
+                byte[] bs = FileUtil.readBytes(dbfPath);
+                if (bs != null && bs.length >= 30) {
+                    byte b = bs[29];
+                    if (b == 0x4d) {
+                        shpCharset = Charset.forName("GBK");
+                    }
+                }
+            }
+        }
 
         if(shpCharset == null){
-            shpCharset = Charset.forName("GBK");
+            shpCharset = StandardCharsets.UTF_8;
         }
         
         try {
@@ -58,6 +71,7 @@ graph TD
     }
 
 ```
+[Shapefile文件编码参考文档](http://kikitamap.com/2015/12/21/TroubleshootingShapefile/)
 
 ## 2. 写入Shapefile文件
 
