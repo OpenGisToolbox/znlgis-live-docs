@@ -1,5 +1,7 @@
 # Windows下的GDAL环境配置
 
+[返回](../index.md)
+
 在Windows下GDAL环境的配置方式有很多种，我尝试了很多不同的配置方式，包括Anaconda、
 [GISInternals](https://www.gisinternals.com/index.html)、QGIS、OSGeo4W等，
 我这里只说最简单的一种配置方式，基于OSGeo4W的配置方式。
