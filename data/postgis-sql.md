@@ -94,3 +94,23 @@ PostGIS本身并不直接支持分布式数据库，但是可以通过PostgreSQL
 13. **postgis_fuzzystrmatch**：这个扩展提供了确定字符串之间的相似性和距离的功能。
 
 14. **postgis_address_standardizer**：这个扩展用于将给定的地址解析为标准格式。
+
+## 默认建图层SQL
+
+```SQL
+
+create table test_layer
+(
+    fid           serial primary key,
+    shape         public.geometry(MultiPolygon, 4490),
+    test          varchar
+);
+
+create index spatial_test_layer_shape on test_layer using gist (shape);
+
+comment on table test_layer is '测试图层';
+comment on column test_layer.fid is '要素ID';
+comment on column test_layer.shape is '图形';
+comment on column test_layer.test is '测试字段';
+
+```
