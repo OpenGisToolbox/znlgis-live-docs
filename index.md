@@ -1,5 +1,8 @@
 # 文档索引
 
+#### 粉丝QQ群：`289280914`
+#### 直播文档地址：https://github.com/OpenGisToolbox/znlgis-live-docs
+
 [图层级GIS数据格式概述](data/layer.md)
 
 [Shapefile代码示例](data/shapefile.md)
