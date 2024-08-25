@@ -3,9 +3,11 @@
 ## 1. 安装NVM
 
 ### 1.1 下载安装包
+
 [下载地址](https://github.com/coreybutler/nvm-windows/releases)
 
 ### 1.2 安装
+
 双击安装包，一路下一步即可。安装完成后在终端输入nvm version，能查到版本号说明安装成功了。
 
 ## 2. 修改NVM配置
@@ -36,7 +38,7 @@ NVM_HOME: nvm安装路径
 NVM_SYMLINK：nvm 配置 nodejs 的软链接，nvm use 版本号 时会自动创建
 
 ## 5. 配置NPM镜像源
-    
+
 ```shell
     npm config set registry http://registry.npmmirror.com
 ```
@@ -74,7 +76,3 @@ NVM_SYMLINK：nvm 配置 nodejs 的软链接，nvm use 版本号 时会自动创
 ```shell
     %NVM_SYMLINK%\node_global
 ```
-
-
-
-

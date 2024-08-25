@@ -78,4 +78,3 @@ ENV LC_ALL=C.UTF-8
 # 设置时区为上海
 RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
 ```
-

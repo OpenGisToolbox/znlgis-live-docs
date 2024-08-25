@@ -3,7 +3,7 @@
 ## 安装docker desktop
 
 ## 安装postgis
-    
+
 ```bash
 
 docker pull postgis/postgis

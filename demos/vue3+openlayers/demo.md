@@ -20,4 +20,3 @@ npm install vue3-openlayers
 npm install axios
 npm install base-64
 ```
-
