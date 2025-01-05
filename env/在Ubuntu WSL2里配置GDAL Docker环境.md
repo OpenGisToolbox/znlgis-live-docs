@@ -1,7 +1,5 @@
 # 在Ubuntu WSL2里配置GDAL Docker环境
 
-[返回](../index.md)
-
 ## 启用systemd
 
 ```bash

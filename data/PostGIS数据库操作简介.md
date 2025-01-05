@@ -1,7 +1,5 @@
 # PostGIS数据库操作简介
 
-[返回](../index.md)
-
 ## PostGIS Docker安装
 
 ```Bash

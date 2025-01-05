@@ -1,7 +1,5 @@
 # PostGIS代码操作简介
 
-[返回](../index.md)
-
 ## 1. 代码操作POSTGIS的可选方案
 
 1. jdbc

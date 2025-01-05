@@ -1,7 +1,5 @@
 # FileGDB代码示例
 
-[返回](../index.md)
-
 ## 1. 读取FileGDB图层
 
 ### 1.1 实现思路
